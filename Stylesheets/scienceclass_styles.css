@@ -1,0 +1,230 @@
+@charset "utf-8";
+/* CSS Document */
+
+#wrapper {
+  width: 80%;
+  min-width: 0;
+  margin: 10%;
+  padding: 2px;
+  background-size: auto;
+  justify-content: center;
+}
+
+footer {
+  background: #bdd784;
+  text-align: center;
+  width: auto;
+  padding-top: 5px;
+  padding-bottom: 5px;
+}
+
+#canvas {
+  display: inline;
+  margin-top: 5px;
+  margin-left: 5px;
+  margin-bottom: 5px;
+  margin-right: 5px;
+}
+
+.contact-info {
+  display: block;
+}
+
+.center {
+  align-content: center;
+  text-align: center;
+  margin-right: 50px;
+  margin-left: 50px;
+}
+
+h1 {
+  text-align: center;
+}
+.mySlides {
+  display: none;
+  margin-left: 220px;
+  animation: fading 3s;
+}
+@keyframes fading {
+  0% {
+    opacity: 0;
+  }
+  50% {
+    opacity: 1;
+  }
+}
+
+.w3-content,
+.w3-auto {
+  margin-left: auto;
+  margin-right: auto;
+}
+.w3-content {
+  max-width: 900px;
+}
+.w3-display-left {
+  position: absolute;
+  top: 50%;
+  left: 20%;
+  -ms-transform: translate(0%, -50%);
+  transform: translate(0%, -50%);
+}
+.w3-display-right {
+  position: absolute;
+  top: 50%;
+  right: 21%;
+  -ms-transform: translate(0%, -50%);
+  transform: translate(0%, -50%);
+}
+.w3-display-container:hover .w3-display-hover {
+  display: block;
+}
+.w3-display-container:hover span.w3-display-hover {
+  display: inline-block;
+}
+.w3-display-hover {
+  display: none;
+}
+.w3-auto {
+  max-width: 1140px;
+}
+.w3-black,
+.w3-hover-black:hover {
+  color: #fff !important;
+  background-color: #000 !important;
+}
+.w3-display-container {
+  position: relative;
+}
+.w3-button {
+  border: none;
+  display: inline-block;
+  padding: 8px 16px;
+  vertical-align: middle;
+  overflow: hidden;
+  text-decoration: none;
+  color: inherit;
+  background-color: inherit;
+  text-align: center;
+  cursor: pointer;
+  white-space: nowrap;
+}
+.w3-button:hover {
+  color: #ffffff;
+  background-color: #868686;
+  box-shadow: 0 10px 12px 0 rgba(0, 0, 0, 0.25),
+    0 10px 30px 0 rgba(0, 0, 0, 0.19);
+  transition-duration: 0.2s;
+}
+.w3-button:disabled {
+  cursor: not-allowed;
+  opacity: 0.3;
+}
+.right {
+  float: right;
+  padding-right: 20px;
+}
+
+.left {
+  float: right;
+  margin-bottom: 50px;
+  padding: 5px;
+  margin-top: 400px;
+}
+
+.center {
+  margin-left: 17em;
+}
+
+.front_float {
+  float: right;
+  margin-bottom: 50px;
+  margin-left: 30px;
+}
+
+a {
+  text-decoration: none;
+}
+
+.myform {
+  color: black;
+  margin-left: auto;
+  margin-right: auto;
+  padding: 10px;
+  text-align: center;
+  background-image: linear-gradient(to bottom right, #bdd784, #779944);
+  border: medium;
+  border-color: black;
+  font-weight: bold;
+  font-size: 15px;
+  border-radius: 15px;
+}
+
+p h1 h2 {
+  justify-content: center;
+}
+
+input {
+  border: none;
+  padding: 15px 32px;
+  text-decoration: none;
+  font-size: 12px;
+  border-radius: 3px;
+}
+
+input:hover[type="Submit"] {
+  background: #a1c963;
+  cursor: pointer;
+  box-shadow: 0 10px 12px 0 rgba(0, 0, 0, 0.25),
+    0 10px 30px 0 rgba(0, 0, 0, 0.19);
+  transition-duration: 0.2s;
+  color: whitesmoke;
+}
+input:hover[type="Reset"] {
+  background: #a1c963;
+  cursor: pointer;
+  box-shadow: 0 10px 12px 0 rgba(0, 0, 0, 0.25),
+    0 10px 30px 0 rgba(0, 0, 0, 0.19);
+  transition-duration: 0.2s;
+  color: whitesmoke;
+}
+
+body {
+  background-image: url("../Graphics/ScienceBackground.gif");
+  font-family: "Gill Sans";
+  font-size: 12px;
+}
+
+.floatimg {
+  float: left;
+}
+
+.floatimg_wild {
+  float: left;
+}
+
+nav {
+  background-color: #bdd784;
+}
+
+nav li {
+  display: inline-block;
+  font-size: 30px;
+  text-align: center;
+  margin-left: 30px;
+  padding-bottom: 10px;
+}
+
+nav a {
+  text-decoration: none;
+  text-align: center;
+}
+
+nav a:link {
+  color: #779944;
+}
+
+nav a:hover {
+  background-color: #785e52;
+  transition-duration: 0.3s;
+}

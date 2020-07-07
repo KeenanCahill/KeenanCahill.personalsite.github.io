@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="keywords" content="Science" />
+    <meta
+      name="description"
+      content="Science Class is a store based website for all grades."
+    />
+    <link
+      rel="stylesheet"
+      type="text/css"
+      href="Stylesheets/scienceclass_styles.css"
+    />
+
+    <title>Science Class - Wetlands</title>
+
+    <script>
+      var slideIndex = 1;
+      showDivs(slideIndex);
+
+      function plusDivs(n) {
+        showDivs((slideIndex += n));
+      }
+
+      function showDivs(n) {
+        var i;
+        var x = document.getElementsByClassName("mySlides");
+        if (n > x.length) {
+          slideIndex = 1;
+        }
+        if (n < 1) {
+          slideIndex = x.length;
+        }
+        for (i = 0; i < x.length; i++) {
+          x[i].style.display = "none";
+        }
+        x[slideIndex - 1].style.display = "block";
+      }
+    </script>
+  </head>
+  <body>
+    <header></header>
+    <div class="floatimg">
+      <a href="index.html">
+        <img src="Graphics/sms_logo.jpg" width="200" height="98" alt="Home" />
+      </a>
+    </div>
+    <nav>
+      <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="backyard.html">Backyard</a></li>
+        <li><a href="forrest.html">Forest</a></li>
+        <li><a href="wetlands.html">Wetland</a></li>
+
+        <li class="right"><a href="learnmore.html">Learn More</a></li>
+      </ul>
+    </nav>
+    <main id="wrapper">
+      <h1>The Wetlands</h1>
+      <div class="w3-content w3-display-container">
+        <img
+          class="mySlides"
+          src="Graphics/wetland2.jpg"
+          style="width: 50%;"
+          alt="wetland2"
+        />
+        <img
+          class="mySlides"
+          src="Graphics/wetland1.jpg"
+          style="width: 50%;"
+          alt="wetland1"
+        />
+        <img
+          class="mySlides"
+          src="Graphics/wetland3.jpg"
+          style="width: 50%;"
+          alt="wetland3"
+        />
+        <img
+          class="mySlides"
+          src="Graphics/wetland4.jpg"
+          style="width: 50%;"
+          alt="wetland4"
+        />
+        <img
+          class="mySlides"
+          src="Graphics/wetland5.jpg"
+          style="width: 50%;"
+          alt="wetland3"
+        />
+
+        <button
+          class="w3-button w3-black w3-display-left"
+          onclick="plusDivs(-1)"
+        >
+          &#10094;
+        </button>
+        <button
+          class="w3-button w3-black w3-display-right"
+          onclick="plusDivs(1)"
+        >
+          &#10095;
+        </button>
+      </div>
+      <h2>What is a Wetland?</h2>
+
+      <p>
+        Wetlands are areas that connect deep water and land. There are three
+        types of wetlands – marshes, swamps, and bogs – and each of them is
+        different. Swamps are slow moving streams or rivers that host those
+        trees and shrubs that grow in very wet soil. Marshes contain plants that
+        grow with their stems partly in and partly out of the water, and support
+        a wide variety of plants and animals. The water in marshes primarily
+        comes from snow melt and rain. Some marches have a stream where water
+        flows in or out, while in other marshes water enters or leaves
+        underground through the soil.
+      </p>
+      <p>
+        Bogs are fragile environments that require special situations to form
+        and are found mainly in northern environments. Bogs form in holes,
+        called kettle holes, formed by glaciers. There is usually no flow of
+        water in or out of a bog. Without a flow of water, dead plants and
+        animals do not completely decompose which forms a spongy soil called
+        peat.
+      </p>
+      <h2>Why are wetlands important?</h2>
+      <p>
+        Wetlands prevent flooding by acting as sponges. Wetlands absorb water in
+        the spring, during storms, or whenever water levels are high. When water
+        levels are low, such as in summer months, wetlands release water.
+        Wetlands also filter and purify the water that passes through, and
+        release plant material into rivers, which helps to feed fish.
+      </p>
+    </main>
+    <footer>
+      <p class="contact-info">
+        Ms. Sure<br />
+        1111 Main Street<br />
+        Glen Ellyn, IL 60137<br />
+        630-555-1111<br />
+        Email&nbsp;<a href="mailto:sure@sterlingmid.edu">Ms. Sure</a>
+      </p>
+      <p><a href="feedback.html">Leave feedback</a></p>
+    </footer>
+  </body>
+</html>

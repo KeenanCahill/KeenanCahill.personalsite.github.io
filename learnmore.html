@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="keywords" content="Science" />
+    <meta
+      name="description"
+      content="Science Class is a store based website for all grades."
+    />
+    <link
+      rel="stylesheet"
+      type="text/css"
+      href="Stylesheets/scienceclass_styles.css"
+    />
+    <title>Science Class - Learn More</title>
+    <script src="Scripts/swfobject_modified.js"></script>
+    <script>
+      var canvas, stage, exportRoot;
+
+      function init() {
+        canvas = document.getElementById("canvas");
+        exportRoot = new lib.quote_html5();
+
+        stage = new createjs.Stage(canvas);
+        stage.addChild(exportRoot);
+        stage.update();
+
+        createjs.Ticker.setFPS(lib.properties.fps);
+        createjs.Ticker.addEventListener("tick", stage);
+      }
+    </script>
+  </head>
+  <body>
+    <header></header>
+    <div class="floatimg">
+      <a href="index.html">
+        <img src="Graphics/sms_logo.jpg" width="200" height="98" alt="Home" />
+      </a>
+    </div>
+    <nav>
+      <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="backyard.html">Backyard</a></li>
+        <li><a href="forrest.html">Forest</a></li>
+        <li><a href="wetlands.html">Wetland</a></li>
+
+        <li class="right"><a href="learnmore.html">Learn More</a></li>
+      </ul>
+    </nav>
+    <main id="wrapper">
+      <h1>Learn More</h1>
+      <img
+        class="center"
+        src="Graphics/Learning.jpg"
+        width="1100"
+        height="400"
+        alt="learn"
+      />
+      <h2>Backyard</h2>
+      <p>
+        learn more about Backyards
+        <a
+          href="https://www.countryliving.com/gardening/garden-ideas/g2314/backyard-ideas/?slide=9"
+          >Here</a
+        >
+      </p>
+      <h2>Forrest</h2>
+      <p>learn more about forests here</p>
+      <a href="https://forestlearning.edu.au/about/forest-information.html"
+        >Here</a
+      >
+      <h2>Wetlands</h2>
+      <p>learn more about wetlands here</p>
+      <a href="https://oceanservice.noaa.gov/facts/wetland.html">Here</a>
+      <br />
+      <br />
+      <br />
+      <br />
+    </main>
+    <footer>
+      <p class="contact-info">
+        Ms. Sure<br />
+        1111 Main Street<br />
+        Glen Ellyn, IL 60137<br />
+        630-555-1111<br />
+        Email&nbsp;<a href="mailto:sure@sterlingmid.edu">Ms. Sure</a>
+      </p>
+      <p><a href="feedback.html">Leave feedback</a></p>
+    </footer>
+    <script type="text/javascript">
+      swfobject.registerObject("FlashID");
+    </script>
+  </body>
+</html>
